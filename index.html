@@ -3,7 +3,7 @@
 	<head>
 		<meta charset="UTF-8">
 		<meta name="author" content="Sean Bullock - BlueSpore.com">
-		<title>sporeBalance tests - Sean Bullock (BlueSpore)</title>
+		<title>sporeBalance - Sean Bullock (BlueSpore)</title>
 		<link rel="stylesheet" href="css/norm.css">
 		<script src="jquery.js"></script>
 		<script src="sporeBalance.js"></script>
@@ -12,8 +12,15 @@
 
 		<style type="text/css">
 			body{
-				background:url(mochaGrunge.png);
+				background:#B9AC96;
 				color:#fff;
+				font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+				font-weight:400;
+				font-style:normal;
+			}
+			p{
+				margin:0 0 40px;
+				line-height:160%;
 			}
 			.row{
 
@@ -37,29 +44,36 @@
 
 				transform-style: preserve-3d;
 				backface-visibility: hidden;
-				height:300px;
+				height:auto;
 				width:650px;
 				padding:40px 25px;
 
-				background:#1E3B55;
+				background:#B95C60;
 				display:inline-block;
-
-				/*transition: all 0.3s linear;*/
-
 			}
-			.board-reset{
 
-				/*transition: all 0.2s linear;*/
-
+			.btn{
+				background:#5CB974;
+				padding:0 20px;
+				line-height:60px;
+				height:60px;
+				color:#fff;
+				display:inline-block;
+				text-transform:uppercase;
+				font-weight:bold;
+				text-decoration:none;
 			}
 		</style>
 
 		<div class="row">
-			<div id="balanceBoard" data-balance-threshold="70" data-balance-perspective="500" data-balance-x="true" data-balance-y="false" data-balance-relative-parent=".row">
+			<div id="balanceBoard" data-balance-threshold="70" data-balance-perspective="500" data-balance-x="true" data-balance-y="true" data-balance-relative-parent=".row">
 
-				<h1>Spore Balance</h1>
+				<h1>sporeBalance.js</h1>
 				<p>
 					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia ullamcorper lorem, eget suscipit orci tristique ultrices. Sed faucibus adipiscing sem, vitae condimentum nisi malesuada eu. Fusce vel purus at justo sollicitudin pulvinar. Sed quis neque ac velit cursus adipiscing. Aliquam erat volutpat. Vestibulum tristique dui et nisl porta pulvinar ut ut turpis. Pellentesque dolor erat, posuere ac aliquet ut, bibendum in augue. Nulla convallis luctus urna id fermentum. Aliquam erat volutpat. Sed auctor sem porta nisl ullamcorper ac dictum orci mollis. In hac habitasse platea dictumst. Vivamus interdum est vel nisl auctor at accumsan lacus iaculis. Maecenas faucibus massa at ante suscipit vel dignissim lectus tempus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Praesent id ipsum eget risus eleifend posuere. 
+				</p>
+				<p>
+					<a href="https://github.com/bluespore/spore-balance" class="btn">Visit the  Github page</a>
 				</p>
 
 			</div>
