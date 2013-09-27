@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="author" content="Sean Bullock - BlueSpore.com">
+		<title>sporeBalance tests - Sean Bullock (BlueSpore)</title>
+		<link rel="stylesheet" href="css/norm.css">
+		<script src="jquery.js"></script>
+		<script src="sporeBalance.js"></script>
+	</head>
+	<body>
+
+		<style type="text/css">
+			body{
+				background:url(mochaGrunge.png);
+				color:#fff;
+			}
+			.row{
+
+				max-width:960px;
+				width:100%;
+				min-width:320px;
+				margin:0 auto;
+				text-align:center;
+				padding:150px 0;
+
+			}
+			img{
+
+				max-width:100%;
+				height:auto;
+
+			}
+			#balanceBoard{
+
+				box-shadow:4px 3px 10px rgba(0,0,0,.4);
+
+				transform-style: preserve-3d;
+				backface-visibility: hidden;
+				height:300px;
+				width:650px;
+				padding:40px 25px;
+
+				background:#1E3B55;
+				display:inline-block;
+
+				/*transition: all 0.3s linear;*/
+
+			}
+			.board-reset{
+
+				/*transition: all 0.2s linear;*/
+
+			}
+		</style>
+
+		<div class="row">
+			<div id="balanceBoard" data-balance-threshold="70" data-balance-perspective="500" data-balance-x="true" data-balance-y="false" data-balance-relative-parent=".row">
+
+				<h1>Spore Balance</h1>
+				<p>
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia ullamcorper lorem, eget suscipit orci tristique ultrices. Sed faucibus adipiscing sem, vitae condimentum nisi malesuada eu. Fusce vel purus at justo sollicitudin pulvinar. Sed quis neque ac velit cursus adipiscing. Aliquam erat volutpat. Vestibulum tristique dui et nisl porta pulvinar ut ut turpis. Pellentesque dolor erat, posuere ac aliquet ut, bibendum in augue. Nulla convallis luctus urna id fermentum. Aliquam erat volutpat. Sed auctor sem porta nisl ullamcorper ac dictum orci mollis. In hac habitasse platea dictumst. Vivamus interdum est vel nisl auctor at accumsan lacus iaculis. Maecenas faucibus massa at ante suscipit vel dignissim lectus tempus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Praesent id ipsum eget risus eleifend posuere. 
+				</p>
+
+			</div>
+		</div>
+
+		<script>
+			$('#balanceBoard').sporeBalance();
+		</script>
+
+	</body>
+</html>
